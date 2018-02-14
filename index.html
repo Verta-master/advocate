@@ -76,57 +76,80 @@
           <h3>Последние практики</h3>
           <ul class="practice__list">
             <li class="practice__item">
-              <a href="#" class="practice__category">Уголовные дела</a>
-              <time datetime="2016-04-16">15.04.2016</time>
+              <div class="practice__wrap">
+                <a href="#">Уголовные дела</a>
+                <time datetime="2016-04-16">15.04.2016</time>
+              </div>
               <h4><a href="#">Назначение условного лишения свободы</a></h4>
               <p>Гр. Ш. обвинялся в совершении преступления, предусмотренного ч. 1 ст. 111 УК РФ. Санкция указанной статьи предусматривает наказание до 8 лет лишения...</p>
-              <a href="#">Изучить дело полностью</a>
+              <a href="#" class="practice__link">Изучить дело полностью</a>
             </li>
             <li class="practice__item">
-              <a href="#" class="practice__category">Административные дела</a>
-              <time datetime="2016-04-16">15.04.2016</time>
+              <div class="practice__wrap">
+                <a href="#">Административные дела</a>
+                <time datetime="2016-04-16">15.04.2016</time>
+              </div>
               <h4><a href="#">Страховое возмещение ущерба при ДТП</a></h4>
               <p>К адвокату нашего адвокатского бюро обратился гр. Б., которому страховая компания «Росгосстрах» отказала в возмещении утраты его автомобилем товарной стоимости и занизила...</p>
-              <a href="#">Изучить дело полностью</a>
+              <a href="#" class="practice__link">Изучить дело полностью</a>
             </li>
             <li class="practice__item">
-              <a href="#" class="practice__category">Административные дела</a>
-              <time datetime="2016-04-16">15.04.2016</time>
+              <div class="practice__wrap">
+                <a href="#">Административные дела</a>
+                <time datetime="2016-04-16">15.04.2016</time>
+              </div>
               <h4><a href="#">Семейные споры - решение по алиментам</a></h4>
               <p>В наше бюро обратился гражданин И., которому со стороны его совершеннолетнего сына был предъявлен иск о ежемесячной выплате алиментов в размере 7 000 рублей...</p>
-              <a href="#">Изучить дело полностью</a>
+              <a href="#" class="practice__link">Изучить дело полностью</a>
             </li>
           </ul>
           <a href="#" class="more">Посмотреть все</a>
         </div>
         
-        <ul class="swiper-container person">
-          <div class="swiper-wrapper">
-            <li class="swiper-slide person__item">
-              <img src="img/person-1.jpg" alt="Фамилия Имя Отчество" width="419" height="630">
-              <div class="person__text">
-                <p>Фамилия Имя Отчество</p>
-                <span>Должность</span>
-              </div>
-            </li>
-            <li class="swiper-slide person__item">
-              <img src="img/person-2.jpg" alt="Фамилия Имя Отчество" width="399" height="599">
-              <div class="person__text">
-                <p>Фамилия Имя Отчество</p>
-                <span>Должность</span>
-              </div>
-            </li>
-            <li class="swiper-slide person__item">
-              <img src="img/person-3.jpg" alt="Фамилия Имя Отчество" width="421" height="633">
-              <div class="person__text">
-                <p>Фамилия Имя Отчество</p>
-                <span>Должность</span>
-              </div>
-            </li>
-          </div>
+        <div class="person">
+          <ul class="swiper-container person__slider wrapper">
+            <div class="swiper-wrapper person__wrapper">
+              <li class="swiper-slide person__item">
+                <figure class="person__img">
+                  <img src="img/person-2.jpg" alt="Фамилия Имя Отчество" width="399" height="599">
+                </figure>
+                <div class="person__text">
+                  <p>Фамилия Имя Отчество</p>
+                  <span>Должность</span>
+                </div>
+              </li>
+              <li class="swiper-slide person__item">
+                <figure class="person__img">
+                  <img src="img/person-3.jpg" alt="Фамилия Имя Отчество" width="421" height="633">
+                </figure>
+                <div class="person__text">
+                  <p>Фамилия Имя Отчество</p>
+                  <span>Должность</span>
+                </div>
+              </li>
+              <li class="swiper-slide person__item">
+                <figure class="person__img">
+                  <img src="img/person-2.jpg" alt="Фамилия Имя Отчество" width="399" height="599">
+                </figure>
+                <div class="person__text">
+                  <p>Фамилия Имя Отчество</p>
+                  <span>Должность</span>
+                </div>
+              </li>
+              <li class="swiper-slide person__item">
+                <figure class="person__img">
+                  <img src="img/person-1.jpg" alt="Фамилия Имя Отчество" width="419" height="630">
+                </figure>
+                <div class="person__text">
+                  <p>Фамилия Имя Отчество</p>
+                  <span>Должность</span>
+                </div>
+              </li>
+            </div>
+          </ul>
           <div class="swiper-button-prev person__prev"></div>
           <div class="swiper-button-next person__next"></div>
-        </ul>
+        </div>
       </section>
     </article>
     
@@ -225,16 +248,19 @@
       el: '.slider__pagination',
       clickable: true,
     },
-     navigation: {
+    navigation: {
       nextEl: '.slider__next',
       prevEl: '.slider__prev',
     },
   })
-  var mySwiper = new Swiper ('.person', {
-     navigation: {
+  var mySwiper = new Swiper ('.person__slider', {
+    navigation: {
       nextEl: '.person__next',
       prevEl: '.person__prev',
     },
+    slidesPerView: 3,
+    centeredSlides: true,
+    loop: true,
   })
   </script>
 </body>

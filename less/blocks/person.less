@@ -1,0 +1,77 @@
+.person {
+  position: relative;
+  margin-top: 50px;
+}
+
+.person__slider {
+  border-right: 1px solid rgba(219, 228, 235, 0.1);
+  border-left: 1px solid rgba(219, 228, 235, 0.1);
+}
+
+.person__wrapper {
+  .person__item .person__img {
+    opacity: 0.2;
+    filter: grayscale(0.8);
+  }
+  
+  .swiper-slide-active .person__img {
+    opacity: 1;
+    filter: grayscale(0);
+  }
+  
+  .swiper-slide-active .person__text {
+    border-right: 1px solid rgba(219, 228, 235, 0.1);
+    border-left: 1px solid rgba(219, 228, 235, 0.1);
+  }
+}
+
+.person__item {  
+  p {
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  span {
+    display: block;
+    color: #80909c;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.person__img {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.person__text {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+
+.person__prev,
+.person__next {
+  background-image: url(../img/Arrow.svg);
+  background-size: 10px 16px;
+}
+
+.person__prev {
+  transform: rotate(180deg);
+  left: ~"calc(50% - 660px)";
+}
+
+.person__next {
+  right: ~"calc(50% - 660px)";
+}
