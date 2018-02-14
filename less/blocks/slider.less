@@ -3,6 +3,7 @@
 }
 
 .slider__item {
+  height: 620px;
   position: relative;
   box-sizing: border-box;
   
@@ -17,8 +18,9 @@
   position: absolute;
   top: 0;
   bottom: 70px;
-  left: 50%;
+  left: 50.8%;
   width: 500px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,13 +28,17 @@
   
   h2 {
     max-width: 100%;
+    margin-bottom: 20px;
     font-size: 40px;
     font-weight: 300;
     line-height: 1;
     color: #fff;
+    letter-spacing: -0.04em;
   }
   
   p {
+    margin-top: 0;
+    margin-bottom: 25px;
     max-width: 100%;
     font-size: 15px;
     line-height: 30px;
@@ -46,6 +52,8 @@
 
 .slider > .swiper-pagination-bullets {
   bottom: 60px;
+  text-align: left;
+  left: 50.8%;
 }
 
 .slider > .slider__pagination .swiper-pagination-bullet {
