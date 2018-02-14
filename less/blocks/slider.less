@@ -1,0 +1,70 @@
+.slider__item {
+  position: relative;
+  box-sizing: border-box;
+  
+  img {
+    display: block;
+  }
+}
+
+.slider__text {
+  position: absolute;
+  top: 0;
+  bottom: 70px;
+  left: 50%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+  h2 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1;
+    color: #fff;
+  }
+  
+  p {
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+  }
+}
+
+.slider__btn {
+  width: 237px;
+}
+
+.slider > .swiper-pagination-bullets {
+  bottom: 60px;
+}
+
+.slider > .slider__pagination .swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+  background-color: rgb(159, 160, 161);
+  opacity: 1;
+}
+
+.slider > .slider__pagination .swiper-pagination-bullet-active {
+  background-color: rgb(255, 132, 0);
+}
+
+.slider__prev,
+.slider__next {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/Arrow.svg);
+  background-size: 6px 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+}
+
+.slider__prev {
+  transform: rotate(180deg);
+}
+
+.slider__next {
+  
+}
