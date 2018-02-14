@@ -482,6 +482,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
 }
 .logo p {
   max-width: 120px;
@@ -744,7 +745,7 @@ button {
   padding-bottom: 77px;
 }
 .info--news {
-  padding-bottom: 50px;
+  padding-bottom: 55px;
 }
 .info h2 {
   margin-bottom: 15px;
@@ -1154,5 +1155,5 @@ button {
 }
 .law__text {
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
 }
