@@ -1488,7 +1488,26 @@ button {
   margin-bottom: 25px;
 }
 .docs__btn {
+  width: 240px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px 10px;
+}
+.docs__paper {
+  margin-bottom: 95px;
+  padding-right: 40px;
+}
+.docs__paper h3 {
+  max-width: 920px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.docs__paper p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #000;
 }
