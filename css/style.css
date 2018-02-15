@@ -1154,17 +1154,18 @@ button {
   padding-bottom: 45px;
 }
 .breadcrumbs {
-  margin-top: 40px;
+  margin-top: 50px;
+  padding-left: 50px;
 }
 .breadcrumbs__link {
   color: #088bf0;
-  margin-right: 10px;
+  margin-right: 8px;
   position: relative;
 }
 .breadcrumbs__link::after {
   content: "-";
   position: absolute;
-  top: 0;
+  top: -3px;
   right: -10px;
   color: #454553;
   text-decoration: none;
@@ -1181,6 +1182,8 @@ button {
   display: none;
 }
 .promo h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: #454553;
   font-size: 40px;
   font-weight: 300;
@@ -1197,6 +1200,9 @@ button {
   margin-top: 70px;
   width: 100%;
 }
+.promo__wrap {
+  padding-left: 50px;
+}
 .contacts-info {
   width: 100%;
   padding-top: 100px;
@@ -1204,7 +1210,9 @@ button {
   background-color: #fafafa;
 }
 .contacts {
-  margin-bottom: 100px;
+  margin-bottom: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1219,15 +1227,16 @@ button {
   line-height: 24px;
 }
 .contacts h2 {
-  margin-top: 0;
+  margin-top: -5px;
   margin-bottom: 30px;
   color: #222222;
   font-size: 30px;
   line-height: 40px;
   font-weight: 300;
+  letter-spacing: -0.04em;
 }
 .contacts address {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   padding-left: 50px;
   position: relative;
   font-style: normal;
@@ -1245,7 +1254,7 @@ button {
 .contacts a {
   color: #222222;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -1311,6 +1320,7 @@ button {
   line-height: 40px;
   font-weight: 300;
   text-align: center;
+  letter-spacing: -0.04em;
 }
 .form__input,
 .form__text {
@@ -1340,6 +1350,7 @@ button {
 .form__input {
   width: 400px;
   height: 60px;
+  margin-top: 15px;
   margin-bottom: 20px;
   margin-right: 10px;
   margin-left: 10px;
@@ -1348,14 +1359,15 @@ button {
   width: 820px;
   max-width: 820px;
   height: 150px;
-  min-height: 150px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
   outline: none;
+  overflow-x: hidden;
 }
 .form__btn {
   margin-left: auto;
   margin-right: auto;
+  padding: 20px 35px;
 }
