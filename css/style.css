@@ -1222,8 +1222,25 @@ button {
   margin-top: 70px;
   width: 100%;
 }
+.promo--law {
+  padding-bottom: 60px;
+}
+.promo--law h1,
+.promo--law p {
+  max-width: 500px;
+}
+.promo--law img {
+  width: auto;
+  height: auto;
+  margin-top: 0;
+  position: absolute;
+  top: 85px;
+  left: calc(50% + 80px);
+  z-index: -1;
+}
 .promo__wrap {
   padding-left: 50px;
+  position: relative;
 }
 .contacts-info {
   width: 100%;
@@ -1393,4 +1410,85 @@ button {
   margin-left: auto;
   margin-right: auto;
   padding: 20px 35px;
+}
+.docs {
+  width: 100%;
+  min-width: 1440px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background-color: #f7f7f7;
+}
+.docs h2 {
+  color: #222222;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 300;
+  letter-spacing: -0.04em;
+}
+.docs__wrap {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.docs__list {
+  margin-top: 60px;
+  padding-bottom: 5px;
+}
+.docs__item {
+  padding-left: 85px;
+  padding-bottom: 14px;
+  margin-bottom: 45px;
+  position: relative;
+  color: #222222;
+  border-bottom: 1px solid #ebebeb;
+}
+.docs__item::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 25px;
+  width: 40px;
+  height: 45px;
+  background-image: url(../img/icon-star.png);
+  background-repeat: no-repeat;
+}
+.docs__item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  width: 130px;
+  height: 2px;
+  background-color: #088bf0;
+}
+.docs__item h3 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.docs__item h3 a {
+  color: #222222;
+}
+.docs__item h3 a:hover,
+.docs__item h3 a:active {
+  text-decoration: underline;
+  opacity: 1;
+}
+.docs__item a {
+  font-size: 15px;
+  color: #088bf0;
+  text-decoration: none;
+}
+.docs__item a:hover,
+.docs__item a:active {
+  opacity: 0.8;
+}
+.docs__item p {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.docs__btn {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 10px;
 }
