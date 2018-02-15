@@ -982,6 +982,7 @@ button {
   background-color: #07142a;
 }
 .news--work {
+  padding-bottom: 130px;
   background-color: #629fd1;
 }
 .news__list {
@@ -1515,25 +1516,30 @@ button {
 .recent {
   width: 100%;
   min-width: 1440px;
-  padding-top: 55px;
-  padding-bottom: 55px;
   position: relative;
   color: #fff;
   background-color: #111c2f;
 }
 .recent h2 {
-  padding-left: 70px;
+  padding-left: 75px;
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
 }
 .recent .more {
-  padding-left: 70px;
+  padding-left: 75px;
+}
+.recent__wrap {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  position: relative;
+  border-left: 1px solid rgba(219, 228, 235, 0.1);
+  border-right: 1px solid rgba(219, 228, 235, 0.1);
 }
 .recent__item {
   width: 100%;
-  padding-left: 70px;
-  padding-right: 50px;
+  padding-left: 75px;
+  padding-right: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1554,24 +1560,27 @@ button {
   color: #4a90e2;
   opacity: 1;
 }
+.recent__item .practice__list {
+  margin-bottom: 40px;
+}
 .recent__prev,
 .recent__next {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-image: url(../img/Arrow.svg);
   background-size: 6px 10px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.349);
 }
 .recent__next {
-  right: calc(50% - 620px);
+  right: -15px;
 }
 .recent__prev {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  left: calc(50% - 620px);
+  left: -15px;
 }
-.work__wrap {
+.work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1582,8 +1591,12 @@ button {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+.work img {
+  width: 522px;
+  height: auto;
+}
 .work__text {
-  width: 60%;
+  width: 70%;
   height: 480px;
   padding-left: 40px;
   display: -webkit-box;
@@ -1600,12 +1613,10 @@ button {
       -ms-flex-align: start;
           align-items: flex-start;
   color: #222222;
-  font-size: 15px;
-  line-height: 25px;
 }
 .work__text h2 {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #222222;
   font-size: 30px;
   line-height: 1.2;
@@ -1613,10 +1624,12 @@ button {
 }
 .work__text p {
   max-width: 100%;
+  font-size: 15px;
+  line-height: 1.3;
 }
 .work__btn {
   width: 200px;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 .advocate {
   width: 100%;
@@ -1626,6 +1639,7 @@ button {
   background-color: #111c2f;
 }
 .advocate h2 {
+  margin-bottom: 35px;
   font-size: 30px;
   font-weight: 600;
 }
@@ -1634,9 +1648,10 @@ button {
   margin-left: auto;
   margin-right: auto;
   font-size: 15px;
+  line-height: 1.7;
 }
 .advocate__wrap {
-  padding-top: 70px;
+  padding-top: 75px;
   padding-bottom: 60px;
   position: relative;
   border-left: 1px solid rgba(219, 228, 235, 0.1);
@@ -1656,7 +1671,7 @@ button {
   left: 66.6%;
 }
 .advocate__list {
-  margin-top: 80px;
+  margin-top: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1669,7 +1684,7 @@ button {
 }
 .advocate__list li {
   width: 30%;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .advocate__img {
   width: 150px;
@@ -1690,7 +1705,6 @@ button {
   background-color: #fff;
 }
 .advocate__text {
-  font-size: 20px;
   line-height: 1.2;
 }
 .advocate__text span {
@@ -1698,7 +1712,10 @@ button {
   font-size: 13px;
 }
 .advocate__text p {
-  margin-bottom: 10px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 1.2;
 }
 .advocate__btn {
   width: 200px;
@@ -1711,14 +1728,15 @@ button {
 .advocate__next {
   width: 40px;
   height: 40px;
+  top: 59%;
   background-image: url(../img/Arrow.svg);
   background-size: 11px 16px;
 }
 .advocate__next {
-  right: -40px;
+  right: -55px;
 }
 .advocate__prev {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  left: -40px;
+  left: -55px;
 }
