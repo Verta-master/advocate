@@ -1,0 +1,94 @@
+.docs {
+  width: 100%;
+  min-width: 1440px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background-color: #f7f7f7;
+  
+  h2 {
+    color: #222222;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 300;
+    letter-spacing: -0.04em;
+  }
+}
+
+.docs__wrap {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.docs__list {
+  margin-top: 60px;
+  padding-bottom: 5px;
+}
+
+.docs__item {
+  padding-left: 85px;
+  padding-bottom: 14px;
+  margin-bottom: 45px;
+  position: relative;
+  color: #222222;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 25px;
+    width: 40px;
+    height: 45px;
+    background-image: url(../img/icon-star.png);
+    background-repeat: no-repeat;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    width: 130px;
+    height: 2px;
+    background-color: rgb(8, 139, 240);
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    
+    a {
+      color: #222222;
+      
+      &:hover,
+      &:active {
+        text-decoration: underline;
+        opacity: 1;
+      }
+    }
+  }
+  
+  a {
+    font-size: 15px;
+    color: #088bf0;
+    text-decoration: none;
+    
+    &:hover,
+    &:active {
+      opacity: 0.8;
+    }
+  }
+  
+  p {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+}
+
+.docs__btn {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 10px;
+}
