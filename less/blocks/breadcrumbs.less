@@ -1,0 +1,32 @@
+.breadcrumbs {
+  margin-top: 40px;
+}
+
+.breadcrumbs__link {
+  color: #088bf0;
+  margin-right: 10px;
+  position: relative;
+  
+  &::after {
+    content: "-";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    color: #454553;
+    text-decoration: none;
+  }
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+  
+  &:last-child {
+    color: #454553;
+    text-decoration: none;
+    
+    &::after {
+      display: none;
+    }
+  }
+}
