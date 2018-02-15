@@ -458,6 +458,10 @@ button {
   margin-right: auto;
 }
 .header {
+  width: 100%;
+  min-width: 1440px;
+}
+.header__wrap {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 20px;
@@ -601,6 +605,8 @@ button {
   transition: ease-out 0.3s;
 }
 .footer {
+  width: 100%;
+  min-width: 1440px;
   background-color: #07142a;
 }
 .footer__wrap {
@@ -620,6 +626,7 @@ button {
 }
 .slider {
   width: 100%;
+  min-width: 1440px;
 }
 .slider__item {
   width: 100%;
@@ -729,6 +736,7 @@ button {
 }
 .about {
   width: 100%;
+  min-width: 1440px;
   overflow: hidden;
   background-color: #133672;
   background-image: url(../img/img-2.jpg);
@@ -968,6 +976,8 @@ button {
   right: calc(50% - 665px);
 }
 .news {
+  width: 100%;
+  min-width: 1440px;
   padding-bottom: 115px;
   background-color: #07142a;
 }
@@ -1034,6 +1044,8 @@ button {
   text-decoration: none;
 }
 .consulting {
+  width: 100%;
+  min-width: 1440px;
   padding-top: 70px;
   padding-bottom: 105px;
 }
@@ -1097,6 +1109,8 @@ button {
   font-size: 13px;
 }
 .law {
+  width: 100%;
+  min-width: 1440px;
   padding-top: 75px;
   padding-bottom: 95px;
   background-color: #f7f7f7;
@@ -1155,6 +1169,10 @@ button {
 }
 .breadcrumbs {
   margin-top: 50px;
+  width: 100%;
+  min-width: 1440px;
+}
+.breadcrumbs__wrap {
   padding-left: 50px;
 }
 .breadcrumbs__link {
@@ -1181,6 +1199,10 @@ button {
 .breadcrumbs__link:last-child::after {
   display: none;
 }
+.promo {
+  width: 100%;
+  min-width: 1440px;
+}
 .promo h1 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1205,6 +1227,7 @@ button {
 }
 .contacts-info {
   width: 100%;
+  min-width: 1440px;
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #fafafa;
